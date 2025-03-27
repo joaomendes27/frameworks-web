@@ -21,7 +21,7 @@ app.listen(PORT, () => {
 
 // Conexão com o MongoDB Atlas //Alterar senha
 var mongoose = require('mongoose');
-var mongoURL ='mongodb+srv://joao246296:<senha>9@tarefasdb.tpfm1.mongodb.net/tarefasDB?retryWrites=true&w=majority'; // Alterando para tarefasDB
+var mongoURL ='mongodb+srv://joao246296:senha@tarefasdb.tpfm1.mongodb.net/tarefasDB?retryWrites=true&w=majority'; // Alterando para tarefasDB
 
 mongoose.connect(mongoURL, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connect(mongoURL);
