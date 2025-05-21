@@ -5,7 +5,7 @@ const userRoutes = require('./routes/userRoutes');
 app.use('/', userRoutes);
 
 
-// Configuração do CORS
+// Configuração do COR
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader('Access-Control-Allow-Methods', 'HEAD, GET, POST, PATCH, DELETE');
