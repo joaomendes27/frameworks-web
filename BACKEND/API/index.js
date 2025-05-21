@@ -1,6 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
+const userRoutes = require('./routes/userRoutes');
+app.use('/', userRoutes);
+
 
 // Configuração do CORS
 app.use((req, res, next) => {
